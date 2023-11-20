@@ -1,0 +1,25 @@
+﻿@using ALLUP2.Models
+@model List<About>
+<h1>About</h1>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@item.Description</td>
+            </tr>
+        }
+      
+    </tbody>
+</table>
